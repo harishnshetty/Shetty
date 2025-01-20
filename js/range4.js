@@ -145,7 +145,7 @@ function displayProperties(data) {
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Site Details:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.siteDetails}</span></div>
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Broker-name:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokername}</span></div>
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Br-PH no:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokercontact}</span></div>
-                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Sheety </br>63621 87521</span></div>
+                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Shetty </br>63621 87521</span></div>
                     <div class="detail-row">
                         <button class="btn btn-info" onclick='openImagePage(${JSON.stringify(imageUrls)})'>View Photos</button>
                     </div>
@@ -167,7 +167,7 @@ function displayProperties(data) {
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Site Details:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.siteDetails}</span></div>
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Broker-name:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokername}</span></div>
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Br-PH no:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokercontact}</span></div>
-                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Sheety </br>63621 87521</span></div>
+                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Shetty </br>63621 87521</span></div>
                     <div class="detail-row"><span class="no-image-message" style="color: red;">No Photos / ಯಾವುದೇ ಫೋಟೋ ಇಲ್ಲ</span></div>
                     <div class="detail-row">
                         <button class="btn btn-secondary" onclick='openAllFilesPage(${JSON.stringify(fileUrls)})'>View All Files</button>

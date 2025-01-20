@@ -151,7 +151,7 @@ function displayProperties(data) {
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Broker-name:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokername}</span></div>
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Br-PH no:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokercontact}</span></div>
 
-                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Sheety </br>63621 87521</span></div>
+                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Shetty </br>63621 87521</span></div>
                     
                      ${propertyDetails.mapAddress ? `<div class="detail-row">
                     <a href="${propertyDetails.mapAddress}" target="_blank" class="btn btn-primary glow-button">View on Map</a>
@@ -178,7 +178,7 @@ function displayProperties(data) {
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Broker-name:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokername}</span></div>
                     <div class="detail-row"><span class="title" style="font-weight: bold; font-size: 15px;">Br-PH no:</span><span class="value" style="font-weight: normal; font-size: 22px;">${propertyDetails.brokercontact}</span></div>
 
-                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Sheety </br>63621 87521</span></div>
+                    <div class="detail-row"><span class="title"><br>Contact:</br></span><span class="value"><br>Nagaraja Shetty </br>63621 87521</span></div>
                     <div class="detail-row"><span class="no-image-message" style="color: red;">No Photos / ಯಾವುದೇ ಫೋಟೋ ಇಲ್ಲ</span></div>
                      ${propertyDetails.mapAddress ? `<div class="detail-row">
                     <a href="${propertyDetails.mapAddress}" target="_blank" class="btn btn-primary glow-button">View on Map</a>
