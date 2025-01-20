@@ -1,0 +1,132 @@
+/* General Layout for Property Boxes */
+.property-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border: 1px solid #1a6cde;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(17, 200, 121, 0.1);
+    background-color: #f7f8fa;
+}
+
+/* Left Side (Image Area) */
+.left-side {
+    flex: -1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Right Side (Details Area) */
+.right-side {
+    flex: 2;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side .detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.right-side .title {
+    font-weight: bold;
+    color: #333;
+    flex: 1 0 150px;
+}
+
+.right-side .value {
+    color: #555;
+    flex: 2 0 calc(100% - 150px);
+    word-break: break-word;
+}
+
+/* Mobile Layout (Image on Top, Details Below) */
+@media (max-width: 768px) {
+    .property-box {
+        flex-direction: column;
+    }
+    
+    .left-side {
+        order: -1; /* Image goes to the top */
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .left-side img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px; /* Space between image and data */
+    }
+}
+
+/* Glowing Button (Map Address Button) */
+.glow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #4f8fd3, 0 0 20px #dae8f7;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.glow-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 15px #0056b3, 0 0 25px #0056b3;
+    transform: scale(1.05);
+}
+
+/* Styling for Container */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Utility for Center Alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Additional Styles for Consistency */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

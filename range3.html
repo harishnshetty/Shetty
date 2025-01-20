@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1cr - 2 Cr ಶೆಟ್ಟಿ ರಿಯಲ್ ಎಸ್ಟೇಟ್ Shetty Real Estate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+
+
+    <link rel="stylesheet" href="range.css">
+    <style>
+        /* Default Layout (Desktop View) */
+        .property-box {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .left-side {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-side img {
+            max-width: 100%;
+            height: 380px;
+            border-radius: 20px;
+        }
+
+        .right-side {
+            flex: 2;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-side .detail-row {
+            margin-bottom: 10px;
+        }
+
+        .right-side .title {
+            font-weight: bold;
+        }
+
+        .right-side .value {
+            margin-left: 10px;
+        }
+
+        /* Mobile Layout (Image on Top, Data Below) */
+        @media (max-width: 768px) {
+            .property-box {
+                flex-direction: column;
+            }
+
+            .left-side {
+                order: -1; /* Image goes to the top */
+                width: 100%;
+            }
+
+            .right-side {
+                width: 100%;
+            }
+
+            .left-side img {
+                max-width: 100%;
+                height: 300pt;
+                margin-bottom: 15px; /* Space between image and data */
+            }
+        }
+
+      #price-range {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.price-box {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}   
+
+.price-box:hover {
+    background-color: #00b30f;
+}
+
+/* Mobile View (4x4 Grid for Price Boxes) */
+@media (max-width: 768px) {
+    #price-range .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columns in mobile view */
+        gap: -2px; /* Space between boxes */
+    }
+
+     .price-box {
+        font-size: 18px; /* Adjust font size for better fit in smaller boxes */
+        padding: 10px; /* Adjust padding to ensure better spacing */
+    }
+}
+
+
+h4 {
+  animation: blink 0.2s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    color: rgb(5, 5, 5);
+  }
+  to {
+    color: rgb(220, 20, 47);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-left py-0">
+        <h3>Nagaraja-Shetty : 63621 87521</h3>
+      </header>
+
+    <div class="container my-4">
+        
+       <!-- Section for Price Range Boxes -->
+       <section id="price-range" class="container my-4">
+       
+        <div class="row g-3 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="index.html" class="price-box d-block">Home</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="range1.html" class="price-box d-block"> ₹10 L - ₹50 Lakh</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="range2.html" class="price-box d-block">₹50 L - ₹1 Crore</a>
+            </div>
+            <!--  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="range3.html" class="price-box d-block">₹1 Cr - ₹2 Crore</a>
+            </div> -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="range4.html" class="price-box d-block">₹2 Cr - ₹3 Crore</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="range5.html" class="price-box d-block">₹3 Cr - ₹5 Crore</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="jam.html" class="price-box d-block">ಜಮೀನು / Jaminu</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="factory.html" class="price-box d-block">Factory / Shed</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="all.html" class="price-box d-block">ALL</a>
+            </div>
+        </div>
+    </section>
+    <center><h4><img src="2gif.gif" alt="3gif" width="70">₹1Cr - ₹2 Crore Property List👇</h4></center>
+
+        <!-- Properties Container -->
+        <div id="container" class="row g-4">
+            <!-- Dynamic property boxes will be added here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Your JavaScript -->
+    <script src="js/range3.js"></script>
+    <center>
+        <h3>End of the page / No Available Property</h3>
+        <h3>ಪುಟ ಅಂತ್ಯ ಅಥವಾ ಯಾವುದೇ ಆಸ್ತಿ ಲಭ್ಯವಿಲ್ಲ</h3>
+        <section id="price-range" class="container my-4">         
+            <div class="row g-3 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="index.html" class="price-box d-block">Home</a>
+        </div>
+    </center>
+    
+    <footer class="bg-primary text-white text-center py-0">
+        <h3>Design and Maintained by: Harish N Shetty</h3>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Base Styles */
+body {
+  background-image: url('bgindex.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Price Box Styles */
+.price-box {
+  background: #007bff;
+  color: #fff;
+  padding: 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.price-box:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Header */
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Footer */
+footer p {
+  margin: 0;
+}
+
+/* Responsive Grid for Price Range Boxes */
+@media (min-width: 992px) { /* Large screens (Desktop) */
+  .col-lg-3 {
+    flex: 0 0 25%; /* 4 columns in desktop view */
+  }
+}
+
+@media (max-width: 991px) { /* Medium screens (Tablets) */
+  .col-md-3 {
+    flex: 0 0 33.33333%; /* 3 columns in tablet view */
+  }
+}
+
+@media (max-width: 576px) { /* Small screens (Mobile) */
+  .col-6 {
+    flex: 0 0 50%; /* 2 columns in mobile view */
+  }
+}
